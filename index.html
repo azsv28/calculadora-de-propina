@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+    <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+    
+    <title>Tip calculator app</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Epilogue:wght@500;700&family=Montserrat:wght@400;700&family=Playfair+Display:ital,wght@0,700;1,400&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="./stilo.css">
+ </head>
+ <body>
+    <header class="header">
+      <img src="./images/logo.svg" alt="Spli tter">
+    </header>
+    <section class="contenedor">
+      <div class="baritadepresio">
+        <label for="bill"class="bill-label">Bill</label>
+        <input id="bill" class="bill-input" type="number" placeholder="0">
+        <fieldset class="botones">
+          <legend class="bt_legend">Select Tip %</legend>
+          <button class="bt bt-selector">5%</button>
+          <button class="bt">10%</button>
+          <button class="bt">15%</button>
+          <button class="bt">25%</button>
+          <button class="bt">50%</button>
+          <input class="custom" type="number" placeholder="Custom">
+        </fieldset>
+        <label for="People"class="people-label">Number of People <samp  id="alerta" class="error"></samp></label>
+        <input id="People" class="people-input" type="number" placeholder="0">
+      </div>
+      <div class="resukt-section">
+        <div class="resultado">
+          <div>
+           <p class="amout">Tip Amount</p>
+           <p class="person">/ person</p>
+          </div>
+          <p class="resultado-amout">0</p>
+          <div>
+            <p class="total">Total</p>
+            <p class="personas">/ person</p>
+          </div>
+          <p class="resultado-total">0</p>
+        </div>
+        <button class="reset">Reset</button>
+      </div>
+    </section>
+   
+    
+    
+    <script src="./js.js" defer></script>
+ </body>
+</html>
